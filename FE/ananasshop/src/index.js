@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./pages/users/Home/Home";
-
+import { BrowserRouter } from "react-router-dom";
+import RouterCustom from "./RouterCustom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Home />);
+root.render(
+  <BrowserRouter>
+    <RouterCustom ></RouterCustom >
+  </BrowserRouter>
+);
